@@ -1,0 +1,54 @@
+/**
+*Accordion
+**/
+
+#accordion .panel {
+  background: none;
+  text-align: left;
+}
+
+#accordion .panel .panel-title {
+  padding: 30px 0 30px 60px;
+  cursor: pointer;
+  position: relative;
+}
+
+#accordion .panel .panel-collapse {
+  padding-left: 60px;
+}
+
+#accordion .panel .panel-title a span:after,
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 36px;
+  height: 36px;
+  background: #2f60c3;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span:after {
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+#accordion .panel .panel-title a span:before {
+  -webkit-transform: translate(-50%) rotate(90deg);
+  transform: translate(-50%) rotate(90deg);
+}
+
+#accordion .panel .panel-title a[aria-expanded='true'] span:before {
+  -webkit-transform: translate(-50%) rotate(0deg);
+  transform: translate(-50%) rotate(0deg);
+}

@@ -1,0 +1,81 @@
+/*Bootstrap classes*/
+.navbar-default {
+  background: none;
+  border: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none !important;
+}
+
+/* */
+
+.mainmenu-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay,
+.overlay a,
+.mainmenu-area a {
+  color: #ffffff;
+}
+
+.mainmenu-area a {
+  color: #ffffff !important;
+}
+
+.mainmenu-area .logo {
+  text-transform: uppercase !important;
+  letter-spacing: 2px;
+  height: inherit;
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.mainmenu-area .logo h2 {
+  margin-bottom: 0 !important;
+}
+
+.navItemCustomStyle a {
+  background: none;
+  padding: 30px 15px !important;
+  position: relative !important;
+  border-top: 3px solid transparent;
+  text-align: center;
+}
+
+.navItemCustomStyle a:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navItemCustomStyle a:hover:before,
+.navItemCustomStyle.active a:before {
+  opacity: 1;
+  top: 0;
+}
+
+.navItemCustomStyle.active a,
+.navItemCustomStyle a:hover {
+  border-top: 3px solid #ffffff;
+}
+
