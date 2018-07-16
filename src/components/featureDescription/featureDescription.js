@@ -52,7 +52,7 @@ class FeatureDescription extends Component {
               <div id="caption_slide" className="carousel slide caption-slider">
                 <Carousel
                   interval={3500}
-                  // defaultActiveIndex={0}
+                  defaultActiveIndex={0}
                   activeIndex={this.state.activeKey}
                   className="caption-slider featureDescriptionCarousel"
                   controls={false}
