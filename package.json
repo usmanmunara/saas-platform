@@ -1,7 +1,7 @@
 {
   "name": "saas-platform",
   "version": "0.1.0",
-  "homepage": "https://saas-platform.netlify.com",
+  "homepage": "https://fiver-saas-platform.netlify.com/",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
