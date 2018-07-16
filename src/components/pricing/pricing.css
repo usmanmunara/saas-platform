@@ -3,8 +3,13 @@
 ***/
 
 .price-area {
-  background: url('../../Images/parallax-6.jpg') no-repeat scroll center center /
+  background: url('../../Images/parallax-6.jpg') no-repeat fixed center center /
     cover;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  height: 100%;
+
+  /* background-attachment: fixed; */
 }
 
 .price-table h3 {

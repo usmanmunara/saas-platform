@@ -41,7 +41,7 @@ class Pricing extends Component {
                   <li>Customer Support 24/7</li>
                 </ul>
                 <hr />
-                <a href="#" className="button">
+                <a href="#home-page" className="button">
                   Purchase
                 </a>
               </div>
@@ -67,7 +67,7 @@ class Pricing extends Component {
                   <li>Customer Support 24/7</li>
                 </ul>
                 <hr />
-                <a href="#" className="button">
+                <a href="#home-page" className="button">
                   Purchase
                 </a>
               </div>
@@ -90,7 +90,7 @@ class Pricing extends Component {
                   <li>Customer Support 24/7</li>
                 </ul>
                 <hr />
-                <a href="#" className="button">
+                <a href="#home-page" className="button">
                   Purchase
                 </a>
               </div>

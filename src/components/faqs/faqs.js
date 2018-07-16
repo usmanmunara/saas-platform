@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './faqs.css';
-import { Panel, PanelGroup } from 'react-bootstrap';
 import { Animate } from 'react-animate-mount';
 
 class FAQS extends Component {

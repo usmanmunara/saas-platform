@@ -31,7 +31,7 @@ class Header extends Component {
                 consectetur nulla deleniti sint blanditiis quod debitis quis
                 vitae officiis tempora numquam.
               </p>
-              <a href="#" className="button white">
+              <a href="#home-page" className="button white">
                 Watch video
               </a>
             </div>

@@ -9,6 +9,7 @@
   justify-content: space-between;
   flex-direction: row;
   margin-top: 65px;
+  cursor: pointer;
 }
 .carousel-indicator-captions > div {
   display: flex;
@@ -85,33 +86,8 @@
 .caption-slider .caption-photo.two {
   margin-top: 60px;
 }
-.featureDescriptionCarousel {
-  text-align: left;
-}
-
-.caption-slider .caption-title {
-  text-align: left;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
+.featureDescriptionCarousel,
+.caption-slider .caption-title,
 .caption-slider .caption-desc {
   text-align: left;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.caption-slider .caption-button {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.caption-slider .caption-photo.one {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.caption-slider .caption-photo.two {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
 }

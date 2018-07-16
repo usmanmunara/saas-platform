@@ -31,22 +31,22 @@ class Team extends Component {
                 <h6>Co. Founder</h6>
                 <ul className="social-menu">
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-pinterest-p" />
                     </a>
                   </li>
@@ -62,22 +62,22 @@ class Team extends Component {
                 <h6>UX Designer</h6>
                 <ul className="social-menu">
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-pinterest-p" />
                     </a>
                   </li>
@@ -93,22 +93,22 @@ class Team extends Component {
                 <h6>Founder</h6>
                 <ul className="social-menu">
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-pinterest-p" />
                     </a>
                   </li>
@@ -124,22 +124,22 @@ class Team extends Component {
                 <h6>Creative Director</h6>
                 <ul className="social-menu">
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-pinterest-p" />
                     </a>
                   </li>

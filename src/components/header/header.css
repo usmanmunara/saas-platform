@@ -11,6 +11,7 @@
 .header-area {
   background: #000000 url('../../Images/parallax-2.jpg') no-repeat scroll center
     center / cover;
+  background-attachment: fixed;
 }
 
 .anlge-bg {

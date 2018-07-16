@@ -96,15 +96,14 @@ class Contact extends Component {
                     placeholder="Message topic"
                   />
                   <textarea
-                    name="message"
-                    id="form-message"
                     name="form-message"
+                    id="form-message"
                     rows="5"
                     className="form-control"
                     placeholder="Your message"
                     required="required"
                   />
-                  <button type="sibmit" className="button">
+                  <button type="submit" className="button">
                     Submit
                   </button>
                 </form>
@@ -118,28 +117,28 @@ class Contact extends Component {
               <div className="col-xs-12 col-sm-6 pull-right">
                 <ul className="social-menu text-right x-left">
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fab fa-google-plus-g" />
+                    <a href="#home-page">
+                      <i className="fab fa-google-plus-g" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#home-page">
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fab fa-github-alt" />
+                    <a href="#home-page">
+                      <i className="fab fa-github-alt" />
                     </a>
                   </li>
                 </ul>
@@ -161,7 +160,7 @@ class Contact extends Component {
                 <p>
                   &copy;Copyright 2018 All right resurved. This template is made
                   with
-                  <i className="ti-heart" aria-hidden="true" /> by
+                  <i className="fas fa-heart" aria-hidden="true" /> by
                   <a href="https://colorlib.com">Colorlib</a>
                 </p>
               </div>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import MainMenu from '../mainMenu/mainMenu';
 import Header from '../header/header';
-import '../../style.css';
 import '../../responsive.css';
 import FeatureArea from '../featureArea/featureArea';
 import FeatureDescription from '../featureDescription/featureDescription';
@@ -31,7 +30,8 @@ class App extends Component {
       });
     }
   };
-  handleMainmenuSpyScroll({ key, activeHref }) {
+  handleMainmenuSpyScroll(key, activeHref) {
+    console.log(activeHref);
     this.setState({
       menuKey: key,
       activeHref
@@ -40,7 +40,7 @@ class App extends Component {
 
   render() {
     return (
-      <div data-target="#primary-menu" className="App">
+      <div className="App">
         <Waypoint
           onPositionChange={this.handleMainmenuAffix}
           bottomOffset="5px"
@@ -58,6 +58,7 @@ class App extends Component {
           <Header />
         </Waypoint>
         <Waypoint
+          bottomOffset="5px"
           onEnter={() => this.handleMainmenuSpyScroll('2', '#service-page')}
         >
           <FeatureArea />

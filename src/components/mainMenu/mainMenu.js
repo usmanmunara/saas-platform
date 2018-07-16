@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './mainMenu.css';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
-import Waypoint from 'react-waypoint';
 
 class MainMenu extends Component {
   state = {
@@ -22,11 +21,7 @@ class MainMenu extends Component {
 
   render() {
     return (
-      <div
-        ref={this.props.innerRef}
-        data-target="#primary-menu"
-        className="Mainmenu"
-      >
+      <div ref={this.props.innerRef} className="Mainmenu">
         <div className="mainmenu-area">
           <Navbar
             style={{ backgroundColor: this.state.backgroundColor }}
