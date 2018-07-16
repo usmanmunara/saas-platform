@@ -1,9 +1,11 @@
 {
   "name": "saas-platform",
   "version": "0.1.0",
+  "homepage": "https://saas-platform.netlify.com",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
+    "react-anchor-link-smooth-scroll": "^1.0.10",
     "react-animate-mount": "^1.0.1",
     "react-animated-css": "^1.0.4",
     "react-bootstrap": "^0.32.1",

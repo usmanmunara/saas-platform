@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './mainMenu.css';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class MainMenu extends Component {
-  state = {
-    activeKey: 1,
-    backgroundColor: 'none'
-  };
-  handleNavbarActive(key) {
+  constructor() {
+    super();
+    this.state = {
+      activeKey: 1,
+      backgroundColor: 'none'
+    };
+  }
+  handleNavbarActive(key, e) {
     this.setState({ activeKey: key });
   }
 
@@ -49,56 +53,57 @@ class MainMenu extends Component {
                   eventKey={1}
                   href="#home-page"
                 >
-                  Home
+                  <AnchorLink href="#home-page">Home</AnchorLink>
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={2}
                   href="#service-page"
                 >
-                  Service
+                  <AnchorLink href="#service-page">Service</AnchorLink>
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={3}
                   href="#feature-page"
                 >
-                  Features
+                  <AnchorLink href="#feature-page">Features</AnchorLink>
                 </NavItem>
+
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={4}
                   href="#price-page"
                 >
-                  Pricing
+                  <AnchorLink href="#price-page">Pricing</AnchorLink>
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={5}
                   href="#team-page"
                 >
-                  Team
+                  <AnchorLink href="#team-page">Team</AnchorLink>
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={6}
                   href="#faq-page"
                 >
-                  FAQ
+                  <AnchorLink href="#faq-page">FAQ</AnchorLink>
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={7}
                   href="#testimonials"
                 >
-                  Testimonials
+                  <AnchorLink href="#testimonials">Testimonials</AnchorLink>
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={8}
-                  href="#contact-page"
+                  // href="#contact-page"
                 >
-                  Contact
+                  <AnchorLink href="#contact-page">Contact</AnchorLink>
                 </NavItem>
               </Nav>
             </Navbar.Collapse>

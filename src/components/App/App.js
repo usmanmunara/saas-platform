@@ -19,6 +19,7 @@ class App extends Component {
     menuKey: 1,
     activeHref: '#home-page'
   };
+
   handleMainmenuAffix = ({ currentPosition }) => {
     if (currentPosition === Waypoint.above) {
       this.setState({
@@ -30,8 +31,8 @@ class App extends Component {
       });
     }
   };
+
   handleMainmenuSpyScroll(key, activeHref) {
-    console.log(activeHref);
     this.setState({
       menuKey: key,
       activeHref

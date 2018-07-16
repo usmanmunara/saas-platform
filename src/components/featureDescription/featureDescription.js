@@ -36,50 +36,54 @@ class FeatureDescription extends Component {
       }
     ];
     return (
-      <section
-        ref={this.props.innerRef}
-        className="angle-bg sky-bg section-padding"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12">
-              <div id="caption_slide" className="carousel slide caption-slider">
-                <Carousel
-                  interval={3500}
-                  className="caption-slider featureDescriptionCarousel"
-                  controls={false}
+   
+        <section
+          ref={this.props.innerRef}
+          className="angle-bg sky-bg section-padding"
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12">
+                <div
+                  id="caption_slide"
+                  className="carousel slide caption-slider"
                 >
-                  {screenSliderData.map((data, index) => {
-                    return (
-                      <CarouselItem key={index}>
-                        <AnimateScreenSlider data={data} />
-                      </CarouselItem>
-                    );
-                  })}
-                </Carousel>
-                <div className="carousel-indicator-captions">
-                  <div>
-                    <strong>Lorem ipsum </strong>
-                    <span>consectetur adipisicing elit.</span>
-                  </div>
-                  <div>
-                    <strong>Lorem ipsum </strong>
-                    <span>consectetur adipisicing elit.</span>
-                  </div>
-                  <div>
-                    <strong>Lorem ipsum </strong>
-                    <span>consectetur adipisicing elit.</span>
-                  </div>
-                  <div>
-                    <strong>Lorem ipsum </strong>
-                    <span>consectetur adipisicing elit.</span>
+                  <Carousel
+                    interval={3500}
+                    className="caption-slider featureDescriptionCarousel"
+                    controls={false}
+                  >
+                    {screenSliderData.map((data, index) => {
+                      return (
+                        <CarouselItem key={index}>
+                          <AnimateScreenSlider data={data} />
+                        </CarouselItem>
+                      );
+                    })}
+                  </Carousel>
+                  <div className="carousel-indicator-captions">
+                    <div>
+                      <strong>Lorem ipsum </strong>
+                      <span>consectetur adipisicing elit.</span>
+                    </div>
+                    <div>
+                      <strong>Lorem ipsum </strong>
+                      <span>consectetur adipisicing elit.</span>
+                    </div>
+                    <div>
+                      <strong>Lorem ipsum </strong>
+                      <span>consectetur adipisicing elit.</span>
+                    </div>
+                    <div>
+                      <strong>Lorem ipsum </strong>
+                      <span>consectetur adipisicing elit.</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
     );
   }
 }
