@@ -12,11 +12,10 @@ import Testimonials from '../testimonials/tesimonials';
 import FAQS from '../faqs/faqs';
 import Contact from '../contact/contact';
 import Waypoint from 'react-waypoint';
-
 class App extends Component {
   state = {
     mainMenuBkgColor: 'none',
-    menuKey: 1,
+
     activeHref: '#home-page'
   };
 

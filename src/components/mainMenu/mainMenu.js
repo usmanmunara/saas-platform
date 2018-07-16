@@ -53,21 +53,21 @@ class MainMenu extends Component {
                   eventKey={1}
                   href="#home-page"
                 >
-                  <AnchorLink href="#home-page">Home</AnchorLink>
+                  Home
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={2}
                   href="#service-page"
                 >
-                  <AnchorLink href="#service-page">Service</AnchorLink>
+                  Service
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={3}
                   href="#feature-page"
                 >
-                  <AnchorLink href="#feature-page">Features</AnchorLink>
+                  Features
                 </NavItem>
 
                 <NavItem
@@ -75,35 +75,35 @@ class MainMenu extends Component {
                   eventKey={4}
                   href="#price-page"
                 >
-                  <AnchorLink href="#price-page">Pricing</AnchorLink>
+                  Pricing
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={5}
                   href="#team-page"
                 >
-                  <AnchorLink href="#team-page">Team</AnchorLink>
+                  Team
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={6}
                   href="#faq-page"
                 >
-                  <AnchorLink href="#faq-page">FAQ</AnchorLink>
+                  FAQ
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={7}
                   href="#testimonials"
                 >
-                  <AnchorLink href="#testimonials">Testimonials</AnchorLink>
+                  Testimonials
                 </NavItem>
                 <NavItem
                   className="navItemCustomStyle"
                   eventKey={8}
-                  // href="#contact-page"
+                  href="#contact-page"
                 >
-                  <AnchorLink href="#contact-page">Contact</AnchorLink>
+                  Contact
                 </NavItem>
               </Nav>
             </Navbar.Collapse>

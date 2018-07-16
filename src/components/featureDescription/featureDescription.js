@@ -4,6 +4,12 @@ import { Carousel, CarouselItem } from 'react-bootstrap';
 import AnimateScreenSlider from './animatedscreenSlider';
 
 class FeatureDescription extends Component {
+  state = {
+    activeKey: null
+  };
+  handleCarouselClick(key) {
+    this.setState({ activeKey: key });
+  }
   render() {
     const screenSliderData = [
       {
@@ -36,54 +42,53 @@ class FeatureDescription extends Component {
       }
     ];
     return (
-   
-        <section
-          ref={this.props.innerRef}
-          className="angle-bg sky-bg section-padding"
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12">
-                <div
-                  id="caption_slide"
-                  className="carousel slide caption-slider"
+      <section
+        ref={this.props.innerRef}
+        className="angle-bg sky-bg section-padding"
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12">
+              <div id="caption_slide" className="carousel slide caption-slider">
+                <Carousel
+                  interval={3500}
+                  // defaultActiveIndex={0}
+                  activeIndex={this.state.activeKey}
+                  className="caption-slider featureDescriptionCarousel"
+                  controls={false}
+                  // onSlideEnd={() => this.setState({ activeKey: null })}
                 >
-                  <Carousel
-                    interval={3500}
-                    className="caption-slider featureDescriptionCarousel"
-                    controls={false}
-                  >
-                    {screenSliderData.map((data, index) => {
-                      return (
-                        <CarouselItem key={index}>
-                          <AnimateScreenSlider data={data} />
-                        </CarouselItem>
-                      );
-                    })}
-                  </Carousel>
-                  <div className="carousel-indicator-captions">
-                    <div>
-                      <strong>Lorem ipsum </strong>
-                      <span>consectetur adipisicing elit.</span>
-                    </div>
-                    <div>
-                      <strong>Lorem ipsum </strong>
-                      <span>consectetur adipisicing elit.</span>
-                    </div>
-                    <div>
-                      <strong>Lorem ipsum </strong>
-                      <span>consectetur adipisicing elit.</span>
-                    </div>
-                    <div>
-                      <strong>Lorem ipsum </strong>
-                      <span>consectetur adipisicing elit.</span>
-                    </div>
+                  {screenSliderData.map((data, index) => {
+                    return (
+                      <CarouselItem key={index}>
+                        <AnimateScreenSlider data={data} />
+                      </CarouselItem>
+                    );
+                  })}
+                </Carousel>
+                <div className="carousel-indicator-captions">
+                  <div onClick={() => this.handleCarouselClick(0)}>
+                    <strong>Lorem ipsum </strong>
+                    <span>consectetur adipisicing elit.</span>
+                  </div>
+                  <div onClick={() => this.handleCarouselClick(1)}>
+                    <strong>Lorem ipsum </strong>
+                    <span>consectetur adipisicing elit.</span>
+                  </div>
+                  <div onClick={() => this.handleCarouselClick(2)}>
+                    <strong>Lorem ipsum </strong>
+                    <span>consectetur adipisicing elit.</span>
+                  </div>
+                  <div onClick={() => this.handleCarouselClick(3)}>
+                    <strong>Lorem ipsum </strong>
+                    <span>consectetur adipisicing elit.</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     );
   }
 }
